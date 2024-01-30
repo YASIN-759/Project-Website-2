@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #777;
+}
+
+.center {
+    display: flex;
+    height: 70%;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.675);
+}
+
+.ldiv {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /* background-color: crimson; */
+}
+
+.rdiv {
+    width: 60%;
+    height: 100%;
+}
+
+.rupperdiv {
+    width: 100%;
+    height: 55%;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.lsidediv {
+    position: relative;
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(255, 166, 0, 0.605);
+}
+
+.lsidediv > img {
+    z-index: 999;
+    height: 500px;
+    position: absolute;
+    top: -90px;
+    left: -40px;
+    border: 1px solid #000;
+}
+
+.rsidediv {
+    overflow: hidden;
+    width: 45%;
+    height: 100%;
+    background-color: brown;
+}
+
+.rsidediv > img {
+    width: 100%;
+    height: 100%;
+}
+
+.rlowerdiv {
+    position: relative;
+    height: 45%;
+    width: 100%;
+    background-color: chocolate;
+}
+
+.imagecontainer {
+    background: url(https://media.istockphoto.com/id/507518968/vector/oil-painting-of-summer-spring-flowers-cornflower-daisy-flower.jpg?s=612x612&w=0&k=20&c=ojsIhhOvCYB8KBBA7c8oFzz9LEomZFWhruc9s9E7To4=);
+    background-position: center;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.imagecontainer > .dev {
+    /* background-color: crimson; */
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    overflow: hidden;
+}
+
+.imagecontainer > .dev > h1 {
+    font-weight: 900;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 40px;
+    position: absolute;
+    left: -340px;
+    transform: scale(0.1);
+}
+
+.text {
+    margin-left: 25px;
+    margin-top: 30px;
+    /* background-color: crimson; */
+    height: 60px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.text > h1 {
+    top: 100px;
+    color: #fff;
+    font-weight: 900;
+    position: absolute;
+    font-size: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    height: 50px;
+    padding: 0 25px;
+    align-items: center;
+}
+
+.nav > i {
+    font-size: 25px;
+    /* opacity: 0.6; */
+}
+
+.rnav > a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    /* opacity: 0.6; */
+    font-weight: 25px;
+}
+
+.rnav > a > i {
+    color: royalblue;
+}
+
+.textbox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.textbox > h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.textbox > p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.textbox > a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    opacity: 0.6;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+    font-size: 13px;   
+}
+
+.textbox2 {
+    position: relative;
+}
+
+.textbox2 #beforepic {
+    position: absolute;
+    top: 40px;
+    left: -250px;
+    font-weight: 900;
+    color: #fff;
+    font-size: 5vw;
+}
+
+.textbox2 #afterpic {
+    position: absolute;
+    top: 110px;
+    left: -250px;
+    z-index: 1000;
+    font-weight: 900;
+    color: #fff;
+    font-size: 5vw;
+}
